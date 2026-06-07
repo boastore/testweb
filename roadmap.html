@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진로 로드맵 | 사명의 길</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Malgun Gothic",sans-serif;
+    background:#000;
+    color:white;
+}
+
+/* 상단 메뉴 */
+
+.top-nav{
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo a{
+    color:white;
+    text-decoration:none;
+    font-size:36px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#ef4444;
+}
+
+.active{
+    color:#ef4444 !important;
+}
+
+/* 페이지 제목 */
+
+.header{
+    background:#111827;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.header h1{
+    color:#ef4444;
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.header p{
+    font-size:22px;
+}
+
+/* 카드 */
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:50px auto;
+}
+
+.card{
+    background:#111827;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:40px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.card h2{
+    color:#ef4444;
+    margin-bottom:25px;
+}
+
+/* 타임라인 */
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step{
+    background:#0f172a;
+    padding:20px;
+    border-radius:10px;
+    border-top:5px solid #ef4444;
+}
+
+.step h3{
+    color:#ef4444;
+    margin-bottom:10px;
+}
+
+.step ul{
+    margin-left:18px;
+}
+
+.step li{
+    margin-bottom:8px;
+}
+
+footer{
+    background:#0f172a;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+@media(max-width:900px){
+
+    .top-nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .header h1{
+        font-size:40px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="top-nav">
+
+    <div class="logo">
+        <a href="index.html">사명의 길</a>
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="jobs.html">직업정보</a></li>
+        <li><a href="test.html">적성테스트</a></li>
+        <li><a href="roadmap.html" class="active">진로로드맵</a></li>
+    </ul>
+
+</nav>
+
+<header class="header">
+
+    <h1>진로 로드맵</h1>
+
+    <p>
+        공공안전 · 국가안보 분야 준비 과정
+    </p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>🚒 소방관 준비 로드맵</h2>
+
+        <div class="timeline">
+
+            <div class="step">
+                <h3>1단계 진로 탐색</h3>
+                <ul>
+                    <li>소방관 직무 조사</li>
+                    <li>채용 정보 확인</li>
+                    <li>체력시험 종목 파악</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>2단계 역량 준비</h3>
+                <ul>
+                    <li>한국사능력검정시험</li>
+                    <li>컴퓨터활용능력</li>
+                    <li>봉사활동 경험</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>3단계 필기시험</h3>
+                <ul>
+                    <li>소방학개론</li>
+                    <li>소방관계법규</li>
+                    <li>행정법총론</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>4단계 체력시험</h3>
+                <ul>
+                    <li>악력</li>
+                    <li>배근력</li>
+                    <li>왕복오래달리기</li>
+                    <li>제자리멀리뛰기</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>5단계 최종합격</h3>
+                <ul>
+                    <li>면접 준비</li>
+                    <li>인성검사</li>
+                    <li>임용</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>🚓 경찰관 준비 로드맵</h2>
+        <div class="timeline">
+            <div class="step"><h3>1단계</h3><ul><li>경찰 직무 이해</li><li>채용 확인</li></ul></div>
+            <div class="step"><h3>2단계</h3><ul><li>한국사</li><li>컴활 준비</li></ul></div>
+            <div class="step"><h3>3단계</h3><ul><li>헌법</li><li>형사법</li><li>경찰학</li></ul></div>
+            <div class="step"><h3>4단계</h3><ul><li>100m 달리기</li><li>1000m 달리기</li><li>악력</li></ul></div>
+            <div class="step"><h3>5단계</h3><ul><li>면접</li><li>최종 임용</li></ul></div>
+        </div>
+    </div>
+<div class="card">
+
+<h2>⚔️ 군인 준비 로드맵</h2>
+
+<div class="timeline">
+
+<div class="step">
+<h3>1단계 진로 선택</h3>
+<ul>
+<li>장교·부사관 진로 결정</li>
+<li>희망 군 선택</li>
+<li>모집 일정 확인</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>2단계 학업 준비</h3>
+<ul>
+<li>국어 학습</li>
+<li>영어 학습</li>
+<li>한국사 학습</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>3단계 체력 준비</h3>
+<ul>
+<li>3km 달리기</li>
+<li>팔굽혀펴기</li>
+<li>윗몸일으키기</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>4단계 전형 준비</h3>
+<ul>
+<li>필기시험</li>
+<li>면접</li>
+<li>신체검사</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>5단계 임관</h3>
+<ul>
+<li>군사교육</li>
+<li>임관</li>
+<li>부대 배치</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+    <div class="card">
+        <h2>⚓ 해양경찰 준비 로드맵</h2>
+        <div class="timeline">
+            <div class="step"><h3>1단계</h3><ul><li>수영 능력 향상</li></ul></div>
+            <div class="step"><h3>2단계</h3><ul><li>해양경찰학 학습</li></ul></div>
+            <div class="step"><h3>3단계</h3><ul><li>필기시험 준비</li></ul></div>
+            <div class="step"><h3>4단계</h3><ul><li>체력검정 준비</li></ul></div>
+            <div class="step"><h3>5단계</h3><ul><li>최종합격</li></ul></div>
+        </div>
+    </div>
+    <div class="card">
+
+<h2>🚑 응급구조사 준비 로드맵</h2>
+
+<div class="timeline">
+
+<div class="step">
+<h3>1단계 진학</h3>
+<ul>
+<li>응급구조학과 진학</li>
+<li>기초 의학 학습</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>2단계 전공 공부</h3>
+<ul>
+<li>응급처치</li>
+<li>외상처치</li>
+<li>심폐소생술</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>3단계 현장실습</h3>
+<ul>
+<li>병원 실습</li>
+<li>119 실습</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>4단계 국가시험</h3>
+<ul>
+<li>필기시험</li>
+<li>실기시험</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>5단계 취업</h3>
+<ul>
+<li>병원</li>
+<li>소방공무원</li>
+<li>응급의료기관</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+    <div class="card">
+
+<h2>🕵️ 정보기관 준비 로드맵</h2>
+
+<div class="timeline">
+
+<div class="step">
+<h3>1단계 전공 선택</h3>
+<ul>
+<li>법학</li>
+<li>행정학</li>
+<li>국제관계학</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>2단계 외국어</h3>
+<ul>
+<li>영어</li>
+<li>중국어</li>
+<li>일본어</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>3단계 공채 준비</h3>
+<ul>
+<li>NCS</li>
+<li>시사상식</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>4단계 전형</h3>
+<ul>
+<li>필기</li>
+<li>면접</li>
+<li>신원조회</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>5단계 임용</h3>
+<ul>
+<li>교육훈련</li>
+<li>실무 배치</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+<div class="card">
+
+<h2>🔒 교정직 준비 로드맵</h2>
+
+<div class="timeline">
+
+<div class="step">
+<h3>1단계 직렬 이해</h3>
+<ul>
+<li>교정직 업무 파악</li>
+<li>채용 공고 확인</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>2단계 필기 준비</h3>
+<ul>
+<li>교정학개론</li>
+<li>형사소송법</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>3단계 체력 준비</h3>
+<ul>
+<li>기초 체력 향상</li>
+<li>건강관리</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>4단계 전형</h3>
+<ul>
+<li>면접</li>
+<li>인성검사</li>
+</ul>
+</div>
+
+<div class="step">
+<h3>5단계 임용</h3>
+<ul>
+<li>교육 수료</li>
+<li>교정시설 배치</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<footer>
+    © 2026 사명의 길
+</footer>
+
+</body>
+</html>

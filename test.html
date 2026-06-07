@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>적성 테스트 | 사명의 길</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* 상단 메뉴 */
+
+.top-nav{
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo a{
+    color:white;
+    text-decoration:none;
+    font-size:36px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#ef4444;
+}
+
+.active{
+    color:#ef4444 !important;
+}
+
+/* 페이지 제목 */
+
+.header{
+    background:#111827;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.header h1{
+    color:#ef4444;
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.header p{
+    font-size:22px;
+}
+/* 적성 테스트 */
+
+.test-container{
+    width:95%;
+    max-width:1400px;
+    margin:50px auto;
+}
+
+.test-card{
+    background:#111827;
+    border-radius:20px;
+    padding:80px;
+    min-height:450px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.progress{
+    font-size:28px;
+    color:#ef4444;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.question{
+    font-size:42px;
+    line-height:1.7;
+    margin:60px 0;
+}
+
+.button-area{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.button-area button{
+    padding:20px 60px;
+    font-size:24px;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.yes-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.no-btn{
+    background:#374151;
+    color:white;
+}
+
+.result-card{
+    display:none;
+
+    background:#111827;
+
+    border-radius:20px;
+
+    padding:80px;
+
+    min-height:450px;
+
+    margin-top:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.result-card h2{
+    color:#ef4444;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.recommend{
+    margin-top:30px;
+    font-size:32px;
+    font-weight:bold;
+    color:#ef4444;
+}
+.restart-btn{
+    margin-top:40px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.restart-btn:hover{
+    background:#dc2626;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="top-nav">
+
+    <div class="logo">
+        <a href="index.html">사명의 길</a>
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="jobs.html">직업정보</a></li>
+        <li><a href="test.html" class="active">적성테스트</a></li>
+        <li><a href="roadmap.html">진로로드맵</a></li>
+    </ul>
+
+</nav>
+
+<header class="header">
+
+    <h1>적성 테스트</h1>
+
+    <p>
+        공공안전 · 국가안보 분야 적합도 검사
+    </p>
+
+</header>
+
+<section class="test-container">
+
+    <div class="test-card" id="testCard">
+
+        <div class="progress" id="progress">
+            1 / 20
+        </div>
+
+        <div class="question" id="question">
+            질문이 표시됩니다.
+        </div>
+
+        <div class="button-area">
+
+            <button class="yes-btn" onclick="answer(true)">
+                예
+            </button>
+
+            <button class="no-btn" onclick="answer(false)">
+                아니오
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="result-card" id="resultCard">
+
+        <h2>테스트 결과</h2>
+
+        <div id="resultText"></div>
+
+<button class="restart-btn" onclick="restartTest()">
+    다시 테스트하기
+</button>
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>직업 정보 | 사명의 길</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Malgun Gothic",sans-serif;
+    background:#000;
+    color:white;
+}
+.top-nav{
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo a{
+    color:white;
+    text-decoration:none;
+    font-size:36px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#ef4444;
+}
+
+.active{
+    color:#ef4444 !important;
+}
+.jobs-header{
+    text-align:center;
+    padding:80px 20px;
+    background:#111827;
+}
+
+.jobs-header h1{
+    font-size:60px;
+    color:#ef4444;
+    margin-bottom:15px;
+}
+
+.jobs-header p{
+    font-size:28px;
+}
+
+.jobs-container{
+    width:90%;
+    max-width:1400px;
+    margin:50px auto;
+}
+
+.job-box{
+    background:#111827;
+    border-radius:15px;
+    overflow:hidden;
+    margin-bottom:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+.job-title{
+    background:#ef4444;
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.job-body{
+    display:flex;
+    gap:30px;
+    padding:30px;
+}
+
+.job-image{
+    width:35%;
+}
+
+.job-image img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.job-info{
+    flex:1;
+}
+
+.job-info h3{
+    color:#ef4444;
+    margin-top:12px;
+    margin-bottom:8px;
+}
+
+.job-info p{
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.site-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#ef4444;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.site-btn:hover{
+    background:#dc2626;
+}
+
+@media(max-width:900px){
+
+    .job-body{
+        flex-direction:column;
+    }
+
+    .job-image{
+        width:100%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+<nav class="top-nav">
+
+    <div class="logo">
+        <a href="index.html">사명의 길</a>
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="jobs.html" class="active">직업정보</a></li>
+        <li><a href="test.html">적성테스트</a></li>
+        <li><a href="roadmap.html">진로로드맵</a></li>
+    </ul>
+
+</nav>
+<header class="jobs-header">
+
+<h1>직업 정보</h1>
+
+<p>
+공공안전 · 국가안보 분야 주요 직업 소개
+</p>
+
+</header>
+
+<section class="jobs-container">
+
+<!-- 소방관 -->
+
+<div class="job-box">
+
+<div class="job-title">🚒 소방관</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/firefighter.jpg" alt="소방관">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>화재 진압, 구조·구급 활동, 재난 현장 대응</p>
+
+<h3>필요 역량</h3>
+<p>체력, 책임감, 봉사정신, 위기대응능력</p>
+
+<h3>필기 과목</h3>
+<p>소방학개론, 소방관계법규, 행정법총론</p>
+
+<h3>체력시험</h3>
+<p>악력, 배근력, 왕복오래달리기, 제자리멀리뛰기</p>
+
+<h3>관련 자격증</h3>
+<p>응급구조사, 컴퓨터활용능력</p>
+
+<a href="https://www.nfa.go.kr" target="_blank" class="site-btn">
+소방청 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 경찰관 -->
+
+<div class="job-box">
+
+<div class="job-title">🚓 경찰관</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/police.jpg" alt="경찰관">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>범죄 예방, 수사, 교통 관리, 치안 유지</p>
+
+<h3>필요 역량</h3>
+<p>정의감, 책임감, 판단력</p>
+
+<h3>필기 과목</h3>
+<p>헌법, 형사법, 경찰학</p>
+
+<h3>체력시험</h3>
+<p>100m 달리기, 1000m 달리기, 악력</p>
+
+<h3>관련 자격증</h3>
+<p>한국사능력검정시험, 컴퓨터활용능력</p>
+
+<a href="https://www.police.go.kr" target="_blank" class="site-btn">
+경찰청 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 군인 -->
+
+<div class="job-box">
+
+<div class="job-title">⚔️ 군인</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/soldier.jpg" alt="군인">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>국가 방위 및 안보 수호</p>
+
+<h3>필요 역량</h3>
+<p>체력, 협동심, 책임감, 리더십</p>
+
+<h3>준비 분야</h3>
+<p>국어, 영어, 한국사, 군사상식</p>
+
+<h3>체력검정</h3>
+<p>팔굽혀펴기, 윗몸일으키기, 3km 달리기</p>
+
+<a href="https://www.mma.go.kr" target="_blank" class="site-btn">
+병무청 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 응급구조사 -->
+
+<div class="job-box">
+
+<div class="job-title">🚑 응급구조사</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/paramedic.jpg" alt="응급구조사">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>응급환자 처치 및 이송</p>
+
+<h3>진출 방법</h3>
+<p>응급구조학과 졸업 후 국가시험 합격</p>
+
+<h3>관련 자격증</h3>
+<p>응급구조사 1급, BLS Provider</p>
+
+<a href="https://www.kuksiwon.or.kr" target="_blank" class="site-btn">
+국시원 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 정보기관 -->
+
+<div class="job-box">
+
+<div class="job-title">🕵️ 정보기관</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/intelligence.jpg" alt="정보기관">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>국가 안보 정보 수집 및 분석</p>
+
+<h3>필요 역량</h3>
+<p>분석력, 논리력, 문제해결능력</p>
+
+<h3>추천 분야</h3>
+<p>법학, 행정학, 외국어</p>
+
+<a href="https://www.nis.go.kr" target="_blank" class="site-btn">
+국가정보원 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 교정직 -->
+
+<div class="job-box">
+
+<div class="job-title">🔒 교정직</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/correction.jpg" alt="교정직">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>수용자 관리 및 교정·교화</p>
+
+<h3>필기 과목</h3>
+<p>교정학개론, 형사소송법개론</p>
+
+<h3>필요 역량</h3>
+<p>인내심, 책임감, 의사소통능력</p>
+
+<a href="https://www.moj.go.kr" target="_blank" class="site-btn">
+법무부 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 해양경찰 -->
+
+<div class="job-box">
+
+<div class="job-title">⚓ 해양경찰</div>
+
+<div class="job-body">
+
+<div class="job-image">
+<img src="images/coastguard.jpg" alt="해양경찰">
+</div>
+
+<div class="job-info">
+
+<h3>주요 업무</h3>
+<p>해양 치안 유지 및 해상 구조</p>
+
+<h3>필기 과목</h3>
+<p>헌법, 형사법, 해양경찰학</p>
+
+<h3>체력시험</h3>
+<p>100m 수영, 50m 잠영</p>
+
+<h3>관련 자격증</h3>
+<p>수상인명구조사</p>
+
+<a href="https://www.kcg.go.kr" target="_blank" class="site-btn">
+해양경찰청 바로가기
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
