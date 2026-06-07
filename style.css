@@ -1,0 +1,506 @@
+/* =========================
+   기본 설정
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Malgun Gothic', sans-serif;
+
+    color:white;
+
+    background:#000;
+
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+ul{
+    list-style:none;
+}
+
+/* =========================
+   메인 배경
+========================= */
+
+.hero{
+
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.65)
+    ),
+    url("../images/main.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+}
+
+/* =========================
+   상단 헤더
+========================= */
+
+.hero-header{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    text-align:center;
+
+    padding-top:25px;
+
+    z-index:1000;
+}
+
+.hero-header h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:white;
+}
+
+/* =========================
+   메뉴
+========================= */
+
+.hero-header ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+}
+
+.hero-header ul li a{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.hero-header ul li a:hover{
+
+    color:#ff4d4d;
+}
+
+/* =========================
+   메인 문구
+========================= */
+
+.hero-content{
+
+    max-width:1200px;
+
+    padding:20px;
+}
+
+.hero-content h3{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+}
+
+.hero-content h1{
+
+    font-family:'Noto Sans KR', sans-serif;
+
+    font-size:110px;
+
+    margin-bottom:20px;
+
+    font-weight:900;
+
+    letter-spacing:8px;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,.6),
+        0 0 30px rgba(255,255,255,.3);
+}
+
+.hero-content h2{
+
+    font-size:50px;
+
+    margin-bottom:30px;
+
+    font-weight:700;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.25);
+}
+
+.hero-content p{
+
+    font-size:28px;
+
+    margin-bottom:40px;
+}
+
+/* =========================
+   버튼
+========================= */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+
+    background:#ef4444;
+
+    padding:18px 35px;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-4px);
+}
+
+.btn2{
+
+    background:transparent;
+
+    border:2px solid white;
+}
+
+.btn2:hover{
+
+    background:white;
+
+    color:black;
+}
+
+/* =========================
+   공통 섹션
+========================= */
+
+.section{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:100px auto;
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:45px;
+
+    margin-bottom:40px;
+
+    color:#ef4444;
+}
+
+/* =========================
+   카드
+========================= */
+
+.card-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+}
+
+.card{
+
+    background:#111827;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+}
+
+.card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+}
+
+.card h3{
+
+    color:#ef4444;
+
+    margin-bottom:15px;
+}
+
+.card p{
+
+    margin-bottom:10px;
+}
+
+/* =========================
+   버튼 링크
+========================= */
+
+.job-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#ef4444;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+}
+
+/* =========================
+   적성 테스트
+========================= */
+
+form{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:100px auto;
+}
+
+.question{
+
+    background:#111827;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+}
+
+#result{
+
+    margin-top:30px;
+
+    background:#111827;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    white-space:pre-line;
+}
+
+/* =========================
+   로드맵
+========================= */
+
+.roadmap{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:100px auto;
+}
+
+.roadmap-item{
+
+    background:#111827;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-left:5px solid #ef4444;
+
+    border-radius:10px;
+}
+
+.roadmap-item h3{
+
+    color:#ef4444;
+
+    margin-bottom:10px;
+}
+
+/* =========================
+   푸터
+========================= */
+
+footer{
+
+    background:#111827;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:80px;
+}
+
+/* =========================
+   모바일
+========================= */
+
+@media(max-width:768px){
+
+    .hero-header h1{
+
+        font-size:40px;
+    }
+
+    .hero-header ul{
+
+        flex-wrap:wrap;
+
+        gap:20px;
+    }
+
+    .hero-header ul li a{
+
+        font-size:18px;
+    }
+
+    .hero-content h1{
+
+        font-size:60px;
+    }
+
+    .hero-content h2{
+
+        font-size:30px;
+    }
+
+    .hero-content h3{
+
+        font-size:20px;
+    }
+
+    .hero-content p{
+
+        font-size:18px;
+    }
+    .restart-btn{
+
+    margin-top:40px;
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.restart-btn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-3px);
+}
+.restart-btn{
+
+    margin-top:40px;
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.restart-btn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-3px);
+}
+}
